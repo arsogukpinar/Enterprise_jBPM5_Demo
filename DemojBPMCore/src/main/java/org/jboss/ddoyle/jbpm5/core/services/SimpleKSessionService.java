@@ -258,7 +258,7 @@ public class SimpleKSessionService implements KSessionService {
 		Class longRunningExternalProcessWIHClass;
 		try {
 			longRunningExternalProcessWIHClass = Class
-					.forName("de.allianz.jbpm5.workitemhandlers.LongRunningExternalProcessWorkItemHandler");
+					.forName("org.jboss.ddoyle.jbpm5.enterprise.demo.workitemhandlers.LongRunningExternalProcessWorkItemHandler");
 		} catch (ClassNotFoundException cnfe) {
 			throw new RuntimeException("Unable to instantiate LongRunningExternalProces WorkItemHandler.", cnfe);
 		}
